@@ -1,0 +1,49 @@
+env:
+  browser: true
+
+extends: airbnb
+
+parser: babel-eslint
+
+overrides:
+ - files: src
+   rules:
+     import/no-extraneous-dependencies: error
+
+rules:
+  arrow-body-style: off
+  arrow-parens: ["error", "as-needed"]
+  comma-dangle: ["error", "never"]
+  consistent-return: off
+  default-case: off
+  func-names: off
+  guard-for-in: off
+  import/extensions: ["error", "ignorePackages"]
+  indent: ["error", "tab"]
+  max-classes-per-file: off
+  no-await-in-loop: off
+  no-confusing-arrow: off
+  no-console: off
+  no-continue: off
+  no-loop-func: off
+  no-mixed-operators: off
+  no-multi-assign: off
+  no-multiple-empty-lines: ["error", { "max": 1, "maxEOF":  0, "maxBOF": 0 }]
+  no-param-reassign: off
+  no-plusplus: off
+  no-restricted-syntax: off
+  no-shadow: off
+  no-tabs: off
+  no-underscore-dangle: off
+  no-unused-vars: ["error", { "args": "none" }]
+  no-use-before-define: off
+  react/jsx-filename-extension: off
+  react/jsx-indent: ["error", "tab"]
+  react/jsx-indent-props: ["error", "tab"]
+  react/jsx-one-expression-per-line: off
+  react/jsx-uses-vars: warn
+  react/jsx-uses-react: warn
+  react/prop-types: off
+  react/react-in-jsx-scope: error
+
+

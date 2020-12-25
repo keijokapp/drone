@@ -1,0 +1,37 @@
+{
+  "name": "drone",
+  "version": "0.9.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "lint": "eslint src webpack.config.js index.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@svgr/webpack": "^5.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-named-asset-import": "^0.3.7",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^17.0.1",
+    "react-dev-utils": "^11.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^7.4.2"
+  }
+}
